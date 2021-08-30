@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+  font-family: 'Lobster', cursive;
+  color: #364290;
+}
+body {
+  background-color: #DBDDE9;
+  width: 100%;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+.header-title a {
+  text-decoration: none;
+  font-size: 40px;
+  padding: 10px;
+  cursor: pointer;
+}
+.header-title a:hover {
+  color: #8895dd;
+}
+  
+.details:hover {
+  color: #8895dd;
+}
+.details {
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.main__container {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7D86BB;
+  box-shadow: 5px 4px 4px black;
+  border-radius: 10px;
+  height: 200px;
+}
+.main__container p {
+  font-size: 20px;
+}
+.main__container h2 {
+  font-weight: normal;
+  font-size: 30px;
+  color: #DBDDE9;
+}
+.carousel__container h2 {
+  font-weight: normal;
+  font-size: 30px;
+}
+.main-div {
+  background-color: #4452A8;
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  transform: rotate(45deg);
+  transition: 420ms;
+  border-radius: 10px;
+}
+.main-div:hover {
+  transform: scale(1.2);
+}
+.carousel  {
+  width: 100%;
+  overflow-x: scroll;
+  padding: 30px;
+  position: relative;
+}
+.carousel__container {
+  white-space: nowrap;
+  margin: 70px 0px;
+  padding-bottom: 10px;
+}
+.carousel__item {
+  cursor: pointer;
+  display: inline-block;
+  width: 200px;
+  height: 250px;
+  border-radius: 20px;
+  background-color: #778FB6;
+  overflow: hidden;
+  margin-right: 10px;
+  transition: 450ms;
+  transform-origin: center left;
+  box-shadow: 5px 4px 4px black;
+}
+.carousel__item-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.carousel__item-details img {
+  width: 110px;
+  height: 110px;
+}
+.carousel__item:hover ~ .carousel__item {
+  transform: translate3d(40px, 0, 0);
+}
+.carousel__container:hover .carousel__item {
+  opacity: 0.3;
+}
+.carousel__container:hover .carousel__item:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer a {
+  margin: 10px;
+}
