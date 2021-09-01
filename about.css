@@ -49,3 +49,13 @@ body {
   box-shadow: 3px 4px 4px 4px grey;
   padding: 30px;
 }
+.container__div h2 {
+  font-size: 40px;
+}
+.container__div img {
+  width: 150px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0.8px 0.8px 0.8px 0.8px black;
+  margin-bottom: 10px;
+}
