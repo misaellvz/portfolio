@@ -7,12 +7,10 @@
 body {
   background: linear-gradient(#364290, #AB88FF);
   width: 100%;
+  margin: 0;
 }
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 60px;
+  display: none;
 }
 .header-title a {
   text-decoration: none;
@@ -28,60 +26,98 @@ body {
   color: #8895dd;
 }
 .details {
-  padding: 10px;
-  margin: 10px;
+  padding: 20px 10px;
+  margin: 0 10px;
   text-decoration: none;
   cursor: pointer;
 }
 .container {
-  width: 100;
-  height: 100vh;
+  height: calc(100vh - 55px);
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0px 30px;
-  min-height: calc(100vh - 200px);
 }
 .container-div {
   flex-direction: column;
-  width: 300px;
-  padding: 50px 50px 30px;
+  padding: 20px 20px 20px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 350px;
-  min-height: 700px;
-  height: 600px;
   border-radius: 40px;
   border: 2px solid #ffffff;
   background: linear-gradient(#4756b8, #b8a1ee);
 }
 .info-container {
-  height: 500px;
   display: flex;
-  justify-content: space-around;
   align-items: center;
   flex-direction: column;
 }
 .container-div h2 {
-  font-size: 40px;
   margin: 0;
 }
 .container-div h3 {
-  font-size: 32px;
-  margin: 0;
+  margin: 10px;
+  font-size: 24px;
+  font-weight: 400;
+}
+.container-div p {
+  text-align: center;
 }
 .container-div img {
   width: 200px;
   height: auto;
   border-radius: 20px;
-  margin-bottom: 20px;
 }
 .footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 80px;
 }
 .footer a {
   margin: 10px;
+}
+.footer-menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #a785fb;
+  z-index: 1000;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+}
+@media screen and (min-width: 768px){
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+  }
+  .container {
+    height: calc(100vh - 114px);
+  }
+  .container-div {
+    padding: 50px 50px 30px;
+    height: 600px;
+  }
+  .container-div h2 {
+    font-size: 40px;
+  }
+  .container-div h3 {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  .info-container {
+    height: 500px;
+    justify-content: space-around;
+  }
+  .footer {
+    padding-bottom: 0;
+  }
+  .footer-menu {
+    display: none;
+  }
 }
