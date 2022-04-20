@@ -53,7 +53,7 @@ body {
   align-items: center;
   flex-direction: column;
   background-color: #7D86BB;
-  box-shadow: 5px 4px 4px black;
+  box-shadow: 2px 2px 3px 0px rgb(223, 222, 222);
   border-radius: 10px;
 }
 .main__container p {
@@ -95,7 +95,7 @@ body {
   height: 300px;
   border-radius: 20px;
   margin: 25px auto;
-  box-shadow: 4px 3px 3px 2px black;
+  box-shadow: 2px 2px 3px 0px rgb(223, 222, 222);
 }
 .carousel__item-details {
   display: flex;
